@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+ 
+<head> 
+    <style>
+        * {
+            margin: 2px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box-wrapper {
+            height: 95vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        #box1 {
+            padding: 10px;
+            border-style: solid;
+            border-top-color: grey;
+            border-left-color: grey;
+            border-right-color: black;
+            border-bottom-color: black;
+            border-width: 10px
+        }
+            #box2 {
+            padding: 8px;        
+            border: solid 1px black
+        }
+        #box3 {      
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            border: solid 1px white
+        }
+        #box4 {
+            margin: 2px;
+            padding-top: 50px;
+            width: 150px;
+            border: solid 1px black
+        }
+        .middle-column {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .middle-column div {
+            flex-grow: 1;
+            padding: 3%;
+            margin: 2px;
+            border: solid 1px black;
+        }
+        .middle-column div+div {
+            margin-top:1%
+        }
+        p {
+  	  		text-align:center
+   		 }
+
+    </style>
+</head>
+ 
+<body>
+    <div class="box-wrapper">
+        <div id="box1">   
+ <p>
+        <div id="box2">
+            <h1><center>Top</center></h1>
+        </div>
+ 
+        <div id="box3">
+            <div id="box4">
+                <h3><br>Way Left</h3>
+            </div>
+            <div class="middle-column">
+                <div id="box5"><br>
+                  <h3>  Middle Up</h3><br>
+                </div>
+                <div id="box6"><br>
+                   <h3> Middle Down6</h3><br>
+                </div>           
+            </div>
+            <div id="box4">
+               <br><h3> Way Right</h3>
+            </div>    
+        </div>
+        <div id="box2">
+            <h1><center><br></center></h1></p>
+        </div>
+    </div>
+</body>
+ 
+</html>
